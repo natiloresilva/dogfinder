@@ -12,7 +12,7 @@ DOGFINDER was developed using JavaScript as part of the Ironhack developer bootc
 - __Find a Dog:__ A user will be able to search the recipe database by selecting the ingredients they have in their kitchen.
 - __Get Involve-Signup:__ A registration form for new users who wants to adopt or being a voluntaire in ours shelters.
 - __Get Involve-Login:__ A sign in form for existing users.
--__FAQ:__ The most frequently asked questions about adopting a dog and how you can collaborate with shelters.
+- __FAQ:__ The most frequently asked questions about adopting a dog and how you can collaborate with shelters.
 
 
 ## Backlog    
