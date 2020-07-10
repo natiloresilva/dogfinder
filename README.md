@@ -22,7 +22,7 @@ DOGFINDER was developed using JavaScript as part of the Ironhack developer bootc
 
 
 ## Wireframes    
-#Balsamic
+
 https://balsamiq.cloud/svt08h4/pbwc0g4
 
 ## Data structure
