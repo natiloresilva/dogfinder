@@ -39,6 +39,9 @@ https://balsamiq.cloud/svt08h4/pbwc0g4
           - login.js
           - singup.js
           - Validator.js
+          - User.js
+          - database.js
+          - APIcalls.js
          
      - **assets/**
           - img/
