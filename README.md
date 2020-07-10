@@ -1,5 +1,5 @@
 
-# dogfinder
+# Dog Finder
 
 ## Description
 Dogfinder is a website that conect people with dogs who need a home. From the comfort of their homes, dog lovers can search for a pet that best matches their needs. 
@@ -26,7 +26,23 @@ DOGFINDER was developed using JavaScript as part of the Ironhack developer bootc
 https://balsamiq.cloud/svt08h4/pbwc0g4
 
 ## Data structure
-Classes and methods definition
+- **root/**
+     - index.html
+     - findadog.html
+     - login.html
+     - singin.html
+     - fqas.html
+     - **css/**
+          - style.css
+     - **js/**
+          - main.js
+          - login.js
+          - singup.js
+          - Validator.js
+         
+     - **assets/**
+          - img/
+         
 
 
 ## APIs
