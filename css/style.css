@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HOME */
+
+.home-container {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.text-logo {
+    font-family: 'Sacramento', serif;
+    font-size: 40px;
+}
+
+.navbar-color {
+    background-color: #e7879a;
+}
+
+.container-image {
+    background-image: url("../assets/img/puppy.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shadow-container-image {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+}
+
+.title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80vh;
+    font-family: 'Sacramento', serif;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon > img {
+    width: 50%;
+}
