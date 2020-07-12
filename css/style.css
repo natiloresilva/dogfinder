@@ -21,6 +21,9 @@
 
 .navbar-color {
     background-color: #f9d7de;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .container-image {
