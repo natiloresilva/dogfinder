@@ -13,19 +13,53 @@ class Singup {
     }
 
 
+    
+    handleEmailInput = (event) => {
+        const email = event.target.value;
 
-    this.emailInput = document.querySelector("#email");
-    handleEmailInput = (event) => {}
+        console.log('email', email);
+    }
 
-    this.passwordInput = document.querySelector("#password");
-    handlePasswordInput = (event) => {}
 
-    this.repeatPasswordInput = document.querySelector("#repeat-password");
-    handleRepeatPasswordInput = (event) => {}
+
+    handlePasswordInput = (event) => {
+        const password = event.target.value;
+
+        console.log('password', password);
+    }
+
+
+    handleRepeatPasswordInput = (event) => {
+        const repeatPassword = event.target.value;
+
+        console.log('repeatPassword', repeatPassword);
+    }
+
+
 
 
     //gestionamos el envio de los datos (submit)
-    saveData = (event) => {}
+    saveData = (event) => {
+        const name = this.nameInput.value;
+        const email = this.emailInput.value;
+        const password = this.passwordInput.value;
+        const repeatPassword = this.repeatPasswordInput.value;
+
+
+        const newUser = new User(name, email, password,);
+
+        //guardamos el nuevo usuario en la base de datos simulada
+
+        db.saveNewUser( newUser);
+
+        //vaciar el form
+        this.nameInput.value = "";
+        this.emailInput.value = "";
+        this.passwordInput.value = "";
+        this.repeatPasswordInput.value = "";
+
+
+    }
 
 
     //registramos las funciones para cada campo
@@ -34,7 +68,7 @@ class Singup {
         this.passwordInput.addEventListener("input", this.handlePasswordInput);
         this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput)
 
-        this.buttonInput..addEventListener("click", this.saveData)
+        this.buttonInput.addEventListener("click", this.saveData)
     }
 }
 
