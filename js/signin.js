@@ -82,7 +82,8 @@ class Signup {
         this.passwordInput.value = "";
         this.repeatPasswordInput.value = "";
 
-
+        this.showSuccessMessage();
+        this.removeMessages();
     }
 
 
@@ -94,6 +95,33 @@ class Signup {
 
         this.buttonInput.addEventListener("click", this.saveData);
     }
+
+    howSuccessMessage = () => {
+        // vacia los errores para que no se sumen
+        this.errorsWrapper.innerHTML = "";
+
+        const errorsObj = validator.getErrors();
+        // convertir el objeto a un array de strings
+        const errorsStringsArr = Object.values(errorsObj);
+
+        if (errorsStringsArr.length > 1) {
+            return;
+        }
+
+        const successMessageP = document.createElement('p');
+        successMessageP.innerHTML = "Tu cuenta ha sido creada con exito";
+
+        this.errorsWrapper.appendChild(successMessageP);
+
+    }
+
+    removeMessages = () => {
+        setTimeout(() => {
+            this.errorsWrapper.innerHTML = "";
+        }, 2000)
+    }
+
+
 
     setErrorMessages = () => {
         //vacia los errores para que no se sumen
