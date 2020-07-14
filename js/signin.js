@@ -40,6 +40,7 @@ class Singup {
 
     //gestionamos el envio de los datos (submit)
     saveData = (event) => {
+        event.preventDefault();
         const name = this.nameInput.value;
         const email = this.emailInput.value;
         const password = this.passwordInput.value;
