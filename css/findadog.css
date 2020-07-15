@@ -21,3 +21,35 @@
     margin: 40px;
     border-radius: 20px;
 }
+
+@media (min-width: 540px) {
+  .dog-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container-card-image {
+    width: 50%;
+    }
+
+    .container-card-image > img {
+    width: 50%;
+    height: 50%;
+    margin: 40px;
+    border-radius: 20px;
+}
+}
+
+@media (min-width: 991px) {
+  .dog-list  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container-card-image {
+    width: 33%;
+    }
+
+}
