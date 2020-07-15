@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,23 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/singin.css">
 </head>
+
 <body>
     <header>
         <!-- Navbar from bootstrap -->
         <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-            <a class="navbar-brand text-logo" href="../index.html">
+            <a class="navbar-brand sacramento" href="../index.html">
                 <img src="../assets/img/logo.png" width="50" height="50" alt="" loading="lazy">
                 dog finder
             </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -31,11 +34,11 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="findadog.html">Find Your Dog</a>
-    
+
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="login.html">Get Involved</a>
-    
+
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="fqa.html">FQA</a>
@@ -45,43 +48,40 @@
         </nav>
     </header>
 
-        
-        <form class="form">
-            <h3 class="title-login">Sing Up</h3>
-            
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text"  id="name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="password">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Repeat Password</label>
-                <input type="password" class="form-control" id="repeat-password">
-            </div>
-            <div class="button-submit">
-            <button type="submit" id="singup-button" class="btn btn-primary">Sing Up</button>
-            </div>
-        </form>
+    <div class="pt-150"></div>
 
-        <div class="message-container">
+    <form class="form">
+        <h3 class="title-login">Sing up</h3>
+
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" id="name" class="form-control">
         </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Repeat password</label>
+            <input type="password" class="form-control" id="repeat-password">
+        </div>
+        <div class="button-submit">
+            <button type="submit" id="singup-button" class="btn btn-primary">Sing up</button>
+        </div>
+    </form>
 
-
+    <div class="message-container">
+    </div>
 
     <footer class="footer">
-        <div>Contact Us</div>
-        <div>+34 63 997 345</div>
-        <div>dogfinder@gmail.com</div>
+        <div>Copyright © 2020 dog finder</div>
     </footer>
-    
+
     <script src="../js/signin.js"></script>
     <script src="../js/User.js"></script>
     <script src="../js/Database.js"></script>
@@ -96,6 +96,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>

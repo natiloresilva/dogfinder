@@ -12,6 +12,7 @@ async function getImageRandomDog() {
             div.classList.add('container-card-image');
             div.innerHTML = `
                 <img src="${data.message}" alt="${data.message}"/>
+                <p>Test<p/>
             `;
             section.appendChild(div);
         }

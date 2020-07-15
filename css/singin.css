@@ -1,0 +1,41 @@
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.form {
+    padding: 50px;
+    background-color: #E9F6F2;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.title-login {
+    text-align: center;
+}
+
+.message-container {
+    background-color:  #f9d7de;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+@media (min-width: 720px) {
+    .form {
+        padding: 50px 10%;
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 991px) {
+    .form {
+        padding: 50px 10%;
+        margin-left: 20%;
+        width: 60%;
+    }
+}

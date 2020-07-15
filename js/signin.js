@@ -42,7 +42,7 @@ class Signup {
         validator.validatePassword(password);
         validator.validatePasswordRepeat(password, passwordRepeat);
 
-            this.setErrorsMessages();
+        this.setErrorsMessages();
     }
 
 

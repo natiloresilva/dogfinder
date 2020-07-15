@@ -1,11 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Dosis', serif;
+
 }
 
 /* HOME */
-
-
 
 .presentation {
     margin-left: 5%;
@@ -22,6 +22,12 @@
     margin-bottom: 60px;
 }
 
+.title-iconos {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
 .container-video-section {
     margin-top: 60px;
 }
@@ -35,7 +41,7 @@
     justify-content: flex-end;
 }
 
-.text-logo {
+.sacramento {
     font-family: 'Sacramento', serif;
     font-size: 40px;
 }
@@ -149,8 +155,12 @@ height: 100%;
 .footer {
     background-color: #F9D7DE;
     width: 100%;
-    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
 }
+
 
 @media (min-width: 540px) {
   .iconos {

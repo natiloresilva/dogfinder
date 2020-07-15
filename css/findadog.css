@@ -19,10 +19,10 @@
     width: 100%;
     height: 100%;
     margin: 40px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 720px) {
   .dog-list {
     display: flex;
     flex-direction: row;
@@ -31,25 +31,17 @@
 
   .container-card-image {
     width: 50%;
-    }
+  }
 
-    .container-card-image > img {
-    width: 50%;
-    height: 50%;
+  .container-card-image > img {
+    width: 65%;
+    height: 65%;
     margin: 40px;
-    border-radius: 20px;
-}
+  }
 }
 
 @media (min-width: 991px) {
-  .dog-list  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .container-card-image {
     width: 33%;
-    }
-
+  }
 }
