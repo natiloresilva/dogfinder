@@ -9,7 +9,7 @@ class Signup {
 
 
         this.buttonInput = document.querySelector("#singup-button");
-        this.errorWrapper = document.querySelector(".message-container");
+        this.errorsWrapper = document.querySelector(".message-container");
     }
 
 
@@ -28,7 +28,7 @@ class Signup {
             //comprueba si el email es único
             validator.validateUniqueEmail(email);
         }
-            this.setErrorMessages();
+            this.setErrorsMessages();
     }
 
 
@@ -42,7 +42,7 @@ class Signup {
         validator.validatePassword(password);
         validator.validatePasswordRepeat(password, passwordRepeat);
 
-            this.setErrorMessages();
+            this.setErrorsMessages();
     }
 
 
@@ -55,7 +55,7 @@ class Signup {
         validator.validatePassword(password);
         validator.validatePasswordRepeat(password, passwordRepeat);
 
-            this.setErrorMessages();
+            this.setErrorsMessages();
     }
 
 
@@ -96,7 +96,7 @@ class Signup {
         this.buttonInput.addEventListener("click", this.saveData);
     }
 
-    howSuccessMessage = () => {
+    showSuccessMessage = () => {
         // vacia los errores para que no se sumen
         this.errorsWrapper.innerHTML = "";
 
@@ -118,14 +118,14 @@ class Signup {
     removeMessages = () => {
         setTimeout(() => {
             this.errorsWrapper.innerHTML = "";
-        }, 2000)
+        }, 4000)
     }
 
 
 
-    setErrorMessages = () => {
+    setErrorsMessages = () => {
         //vacia los errores para que no se sumen
-        this.errorWrapper.innerHTML = "";
+        this.errorsWrapper.innerHTML = "";
         
         const errorsObj = validator.getErrors();
         
@@ -136,7 +136,7 @@ class Signup {
         const errorMessageP = document.createElement('p');
         errorMessageP.innerHTML = errorStr;
 
-        this.errorWrapper.appendChild(errorMessageP);
+        this.errorsWrapper.appendChild(errorMessageP);
         })
     }
 }
