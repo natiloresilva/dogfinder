@@ -1,3 +1,8 @@
+.title-find-your-dog {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
 .dog-list {
     background-color: #E9F6F2;
     display: flex;
@@ -19,7 +24,20 @@
     width: 100%;
     height: 100%;
     margin: 40px;
+    margin-bottom: 10px;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.container-card-image > img:hover {
+  -webkit-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+}
+
+
+.container-card-image > p {
+    font-size: 20px;
 }
 
 @media (min-width: 720px) {
@@ -36,7 +54,6 @@
   .container-card-image > img {
     width: 65%;
     height: 65%;
-    margin: 40px;
   }
 }
 
