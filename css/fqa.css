@@ -25,6 +25,7 @@
     margin-left: 10%;
     width: 80%;
     text-align: center; 
+
   }
 
   .container-questions {
@@ -33,7 +34,9 @@
   }
 
   .container-question {
-    width: 50%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 45%;
   }
-
+  
 }

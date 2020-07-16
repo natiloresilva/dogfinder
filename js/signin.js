@@ -117,7 +117,7 @@ class Signup {
         }
 
         const successMessageP = document.createElement('p');
-        successMessageP.innerHTML = "Tu cuenta ha sido creada con exito";
+        successMessageP.innerHTML = "Your account has been created successfully";
 
         this.errorsWrapper.appendChild(successMessageP);
 

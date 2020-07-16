@@ -34,17 +34,17 @@ class Login {
         // eliminar el mensaje previo
         this.messageContainer.innerHTML = "";
 
-        const message = document.createElement('p');
+        const message = document.createElement('div');
 
         if (user) {
             // si el usuario inicia la sesion con exito
             // agrega la clase para cambiar el color y sobrescribir el estilo anterior
-            message.innerHTML = `hola, ${user.email}`;
+            message.innerHTML = `hello, ${user.email}`;
             message.classList.add("correct-message");
         }
         else {
             // si el inicio de sesión no se ha realizado correctamente
-            message.innerHTML = 'el email y/o password son incorectos';
+            message.innerHTML = 'The email and / or the password are incorrect';
         }
 
         this.messageContainer.appendChild(message);

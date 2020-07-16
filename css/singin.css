@@ -16,7 +16,7 @@
 }
 
 .message-container {
-    background-color:  #f9d7de;
+    background-color: rgba(255, 99, 71, 1);
     margin: 10px 30px;
     display: flex;
     flex-direction: column;
@@ -38,4 +38,8 @@
         margin-left: 20%;
         width: 60%;
     }
+    .message-container{
+    margin-left:30%;
+    width: 40%;
+}
 }
