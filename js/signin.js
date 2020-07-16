@@ -29,6 +29,7 @@ class Signup {
             validator.validateUniqueEmail(email);
         }
             this.setErrorsMessages();
+            this.checkButton();
     }
 
 
@@ -43,6 +44,7 @@ class Signup {
         validator.validatePasswordRepeat(password, passwordRepeat);
 
         this.setErrorsMessages();
+        this.checkButton();
     }
 
 
@@ -56,6 +58,7 @@ class Signup {
         validator.validatePasswordRepeat(password, passwordRepeat);
 
             this.setErrorsMessages();
+            this.checkButton();
     }
 
 
@@ -84,6 +87,11 @@ class Signup {
 
         this.showSuccessMessage();
         this.removeMessages();
+
+        // reiniciar los errores del `validator`
+        validator.resetValidator();
+        // desactivar el botón Sign Up de nuevo
+        this.buttonInput.disabled = true;
     }
 
 
@@ -114,6 +122,21 @@ class Signup {
         this.errorsWrapper.appendChild(successMessageP);
 
     }
+
+    // activar o desactivar el botón de envio (Sign Up)
+    checkButton = () => {
+        const errorsObj = validator.getErrors();
+        const errorsArr = Object.values(errorsObj);
+
+
+        if (errorsArr.length > 0) {
+            this.buttonInput.disabled = true;
+        }
+        else {
+            this.buttonInput.disabled = false;
+        }
+    }
+
 
     removeMessages = () => {
         setTimeout(() => {
