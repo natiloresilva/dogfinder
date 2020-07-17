@@ -35,12 +35,13 @@ class Login {
         this.messageContainer.innerHTML = "";
 
         const message = document.createElement('div');
-
+       
         if (user) {
             // si el usuario inicia la sesion con exito
             // agrega la clase para cambiar el color y sobrescribir el estilo anterior
             message.innerHTML = `hello, ${user.email}`;
             message.classList.add("correct-message");
+           
         }
         else {
             // si el inicio de sesión no se ha realizado correctamente
@@ -53,7 +54,7 @@ class Login {
     }
 
     redirect = () => {
-        setTimeout(() => location.assign('findadog.html'), 4000);
+       // setTimeout(() => location.assign('findadog.html'), 4000);
     }
 
 }

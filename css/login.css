@@ -28,6 +28,13 @@
     border-radius: 30px;
 }
 
+.correct-message {
+    background-color:rgba(63, 191, 63, 1);
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+}
+
 @media (min-width: 720px) {
     .support {
         margin-left: 10%;

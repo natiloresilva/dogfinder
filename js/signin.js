@@ -116,7 +116,8 @@ class Signup {
             return;
         }
 
-        const successMessageP = document.createElement('p');
+        const successMessageP = document.createElement('div');
+        successMessageP.classList.add("correct-message");
         successMessageP.innerHTML = "Your account has been created successfully";
 
         this.errorsWrapper.appendChild(successMessageP);
